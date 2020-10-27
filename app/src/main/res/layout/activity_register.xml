@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="@color/primary_color"
+    >
+
+
+    <TextView
+        android:id="@+id/textView_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="149dp"
+        android:text="Login"
+        android:textAllCaps="true"
+        android:textSize="36sp" />
+
+    <EditText
+        android:id="@+id/username_editText_register"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:hint="username"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/email_editText_register"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username_editText_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:hint="email"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/password_editText_register"
+        android:layout_width="227dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_editText_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textSize="30sp" />
+    <Button
+        android:id="@+id/register_btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textAllCaps="true"
+        android:layout_below="@id/password_editText_register"
+        android:textSize="27sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/already_have_an_account_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_btn_register"
+        android:text="already have an account"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        />
+
+</RelativeLayout>
