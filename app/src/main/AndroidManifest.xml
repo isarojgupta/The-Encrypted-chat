@@ -9,17 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TheEncryptedChat">
-        <activity android:name=".RegisterActivity"></activity>
-        <activity android:name=".LoginActivity" >
+        <activity android:name=".ChatLogActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Message.LatestMessageActivity" />
+        </activity>
+        <activity android:name=".Message.NewMessageActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Message.LatestMessageActivity" />
+        </activity>
+        <activity android:name=".Message.LatestMessageActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".RegisterLogin.RegisterActivity" />
+        <activity android:name=".RegisterLogin.LoginActivity" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

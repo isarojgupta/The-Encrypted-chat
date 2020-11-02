@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "60431540223",
+    "firebase_url": "https://the-encrypted-chat.firebaseio.com",
+    "project_id": "the-encrypted-chat",
+    "storage_bucket": "the-encrypted-chat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60431540223:android:ead3238973f8560b2a11ca",
+        "android_client_info": {
+          "package_name": "com.example.theencryptedchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "60431540223-b4ov8bqdr782ofv6iebhabvqvec9havq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI3c-up7LMmlhq6JJjItfMIJ-KKIfMpyk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "60431540223-b4ov8bqdr782ofv6iebhabvqvec9havq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
