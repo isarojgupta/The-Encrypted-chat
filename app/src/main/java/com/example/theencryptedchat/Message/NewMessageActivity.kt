@@ -21,7 +21,7 @@ import kotlinx.android.synthetic.main.user_item_layout.view.*
 
 class NewMessageActivity: AppCompatActivity() {
 
-    private val TAG = "NewMessageActivityDebuging"
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -85,7 +85,12 @@ class NewMessageActivity: AppCompatActivity() {
 
                 adapter.setOnItemClickListener{item ,view ->
 
+                    val userItem = item as userItem
+
                     val intent = Intent(this@NewMessageActivity,ChatLogActivity::class.java)
+                    /*Using putExtra method to get the username which we are going to  use in chatlog Activity
+                    * to show the action bar title in activity as per people select */
+                    intent.putExtra(USER_KEY,userItem.user)
                     startActivity(intent)
                     finish()
 
@@ -101,6 +106,11 @@ class NewMessageActivity: AppCompatActivity() {
 
         })
   }
+
+    companion object {
+        const val USER_KEY = "USER_KEY";
+        private const val TAG = "NewMessageActivityDebuging"
+    }
 
 }
 
